@@ -1,0 +1,8 @@
+[user]
+	name = komukomo
+	email = komukomo@users.noreply.github.com
+[color]
+	ui = auto
+[core]
+	excludesfile = ~/.gitignore
+
