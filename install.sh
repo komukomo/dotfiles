@@ -8,6 +8,7 @@ DOT_DIR="$HOME/.kmkm-dotfiles"
 main() {
 	echo "run install.sh ..."
 	get_repo
+	cd ${DOT_DIR}
 	do_install
 }
 
