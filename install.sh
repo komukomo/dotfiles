@@ -9,7 +9,13 @@ main() {
 	echo "run install.sh ..."
 	get_repo
 	cd ${DOT_DIR}
+	config_git
 	do_install
+}
+
+config_git() {
+	git config user.name komukomo
+	git config user.email komukomo@users.noreply.github.com
 }
 
 get_repo() {
