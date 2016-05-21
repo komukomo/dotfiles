@@ -10,3 +10,6 @@
 	ff = false
 [pull]
 	ff = only
+[alias]
+	st = status
+	cm = commit
