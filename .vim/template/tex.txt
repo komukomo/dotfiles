@@ -1,0 +1,12 @@
+\documentclass[twocolumn]{jarticle}
+\begin{document}
+
+\title{}
+\author{}
+\date{}
+\maketitle
+
+\section{}
+\subsection{}
+
+\end{document}
