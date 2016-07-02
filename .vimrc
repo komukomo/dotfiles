@@ -35,7 +35,7 @@ set incsearch
 """"""""""""""""""""""""""""""""""
 "indent
 """"""""""""""""""""""""""""""""""
-"set expandtab    "use spaces instead of tabs
+set expandtab    "use spaces instead of tabs
 set autoindent
 set smartindent
 set cindent
