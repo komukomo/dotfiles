@@ -30,7 +30,7 @@ do_install() {
 	DIRPATH=$(cd `dirname $0`; pwd)
 	cd ${DIRPATH}
 
-	TARGETS=$(git ls-files ".*")
+	TARGETS=$(git ls-files ".*" | awk -F'/' '{print $1}' | uniq)
 
 	for file in ${TARGETS[@]}
 	do
