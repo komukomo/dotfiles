@@ -107,3 +107,7 @@ case ${OSTYPE} in
         alias ll='ls -l --color=auto'
         ;;
 esac
+
+function f() {
+    find $1 -iname "*$2*"
+}
