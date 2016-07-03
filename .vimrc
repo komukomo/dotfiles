@@ -21,6 +21,7 @@ set t_Co=256
 set nowrap
 set history=10000
 source $VIMRUNTIME/macros/matchit.vim
+let g:mapleader = "\<Space>"
 
 
 
