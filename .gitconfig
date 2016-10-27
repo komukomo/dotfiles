@@ -13,3 +13,4 @@
 [alias]
 	st = status
 	cm = commit
+	co = checkout
