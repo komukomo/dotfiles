@@ -162,5 +162,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'kien/ctrlp.vim'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'fatih/vim-go', {'for': 'go'}
+  Plug 'Chiel92/vim-autoformat' | source ~/.vim/plug-conf/vim-autoformat.vim
 call plug#end()
 

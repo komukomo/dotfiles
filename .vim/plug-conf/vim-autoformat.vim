@@ -1,0 +1,1 @@
+autocmd BufWrite * :Autoformat
