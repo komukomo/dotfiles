@@ -7,8 +7,8 @@ set number    "show line numbers"
 set backspace=indent,eol,start    "set the working of BackSpace"
 set hidden    "keep the changes to the buffer without saving
 "set the color of cursor in insert mode
-if has('multi_byte_ime')||has('xim')     
-	highlight CursorlM guibg=Purple guifg=NONE
+if has('multi_byte_ime')||has('xim')
+    highlight CursorlM guibg=Purple guifg=NONE
 endif
 "set browsedir=current    "make the current dir default
 set clipboard=unnamed    "enable the clipboard
@@ -114,9 +114,9 @@ set cmdheight=2    "set command 2 lines"
 set statusline=%<%F\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 "change the color of status line in InsertMode
 augroup InsertHook
-autocmd!
-autocmd InsertEnter * highlight StatusLine guifg=#ccdc90 guibg=#2E4340
-autocmd InsertLeave * highlight StatusLine guifg=#2E4340 guibg=#ccdc90
+    autocmd!
+    autocmd InsertEnter * highlight StatusLine guifg=#ccdc90 guibg=#2E4340
+    autocmd InsertLeave * highlight StatusLine guifg=#2E4340 guibg=#ccdc90
 augroup END
 "file open
 set wildmode=list,full
@@ -149,19 +149,19 @@ set ambiwidth=double
 "plugins
 """"""""""""""""""""""""""""""""""
 if has('vim_starting')
-  set rtp+=~/.vim/plugged/vim-plug
-  if !isdirectory(expand('~/.vim/plugged/vim-plug'))
-    echo 'install vim-plug'
-    call system('mkdir -p ~/.vim/plugged/vim-plug')
-    call system('git clone https://github.com/junegunn/vim-plug.git ~/.vim/plugged/vim-plug/autoload')
-  end
+    set rtp+=~/.vim/plugged/vim-plug
+    if !isdirectory(expand('~/.vim/plugged/vim-plug'))
+        echo 'install vim-plug'
+        call system('mkdir -p ~/.vim/plugged/vim-plug')
+        call system('git clone https://github.com/junegunn/vim-plug.git ~/.vim/plugged/vim-plug/autoload')
+    end
 endif
 
 call plug#begin('~/.vim/plugged')
-  Plug 'junegunn/vim-plug', {'dir': '~/.vim/plugged/vim-plug/autoload'}
-  Plug 'kien/ctrlp.vim'
-  Plug 'editorconfig/editorconfig-vim'
-  Plug 'fatih/vim-go', {'for': 'go'}
-  Plug 'Chiel92/vim-autoformat' | source ~/.vim/plug-conf/vim-autoformat.vim
+Plug 'junegunn/vim-plug', {'dir': '~/.vim/plugged/vim-plug/autoload'}
+Plug 'kien/ctrlp.vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'fatih/vim-go', {'for': 'go'}
+Plug 'Chiel92/vim-autoformat' | source ~/.vim/plug-conf/vim-autoformat.vim
 call plug#end()
 
