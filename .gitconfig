@@ -5,6 +5,7 @@
 	ui = auto
 [core]
 	excludesfile = ~/.gitignore
+	editor = vim -c \"set fenc=utf-8\"
 
 [merge]
 	ff = false
