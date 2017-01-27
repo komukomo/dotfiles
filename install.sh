@@ -27,14 +27,13 @@ get_repo() {
 }
 
 do_install() {
-	DIRPATH=$(cd `dirname $0`; pwd)
-	cd ${DIRPATH}
+	cd ${DOT_DIR}
 
 	TARGETS=$(git ls-files ".*" | awk -F'/' '{print $1}' | uniq)
 
 	for file in ${TARGETS[@]}
 	do
-		ln -s ${DIRPATH}/${file} ${HOME}/${file}
+		ln -s ${DOT_DIR}/${file} ${HOME}/${file}
 		if [ $? -eq 0 ]; then
 			echo "success to create sym link: ${file}"
 		fi
