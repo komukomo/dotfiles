@@ -93,6 +93,24 @@ alias mkdir='mkdir -p'
 alias nkfu='nkf -w -Lu --overwrite'
 alias sudo='sudo '
 
+function set_apt() {
+    function apt() {
+        case $1 in
+            i*)
+                pacman -S $2;;
+            se*)
+                pacman -Ss $2;;
+            sh*)
+                pacman -Si $2;;
+            *)
+                echo "This '$0' is an alias for pacman"
+                echo "Support: $0 [install|search|show] <package>"
+                echo
+                pacman -h;;
+        esac
+    }
+}
+
 case ${OSTYPE} in
     darwin*)
         #for Mac
@@ -105,6 +123,13 @@ case ${OSTYPE} in
         alias ls='ls --color=auto'
         alias la='ls -a --color=auto'
         alias ll='ls -l --color=auto'
+        ;;
+    msys*)
+        alias ls='ls --color=auto'
+        alias la='ls -a --color=auto'
+        alias ll='ls -l --color=auto'
+        alias vi='vim'
+        set_apt
         ;;
 esac
 
