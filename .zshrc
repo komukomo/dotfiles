@@ -1,8 +1,5 @@
 [ -z "$PS1" ] && return
 
-export LC_TYPE=ja_JP.UTF-8
-export LANG=ja_JP.UTF-8
-
 autoload -Uz colors
 colors
 
