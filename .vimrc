@@ -128,6 +128,7 @@ set wildmode=list,full
 autocmd BufNewFile *.tex 0r $HOME/.vim/template/tex.txt
 autocmd BufNewFile *.py 0r $HOME/.vim/template/python.txt
 autocmd BufNewFile *.html 0r $HOME/.vim/template/html.txt
+autocmd BufNewFile *.cpp 0r $HOME/.vim/template/cpp.txt
 
 
 """"""""""""""""""""""""""""""""""
