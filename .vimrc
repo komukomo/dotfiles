@@ -52,7 +52,7 @@ set tabstop=4
 "tab
 set list
 set listchars=tab:>-,trail:-
-highlight SpecialKey ctermfg=241
+highlight SpecialKey ctermfg=237
 
 "zenkaku space
 highlight ZenkakuSpace ctermbg=white
@@ -148,12 +148,13 @@ set ambiwidth=double
 
 
 """"""""""""""""""""""""""""""""""
-"vimdiff color
+"color
 """"""""""""""""""""""""""""""""""
 highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=22
 highlight DiffDelete cterm=bold ctermfg=10 ctermbg=52
 highlight DiffChange cterm=bold ctermfg=10 ctermbg=17
 highlight DiffText   cterm=bold ctermfg=10 ctermbg=21
+highlight Comment    ctermfg=22
 
 """"""""""""""""""""""""""""""""""
 "plugins
