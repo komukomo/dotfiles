@@ -11,9 +11,9 @@ HISTSIZE=1000000
 SAVEHIST=1000000
 
 # consle prompt
-local p_cdir="%B%F{blue}[%~]%f%b"$'\n'
-local p_info="%n@%m"
-PROMPT=" $p_cdir $ "
+local p_info="%B%F{blue}%n@%m%f%b"
+local p_cdir="%B%F{blue}%~%f%b"$'\n'
+PROMPT="$p_info $p_cdir $ "
 
 
 autoload -Uz select-word-style
