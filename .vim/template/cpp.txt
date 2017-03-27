@@ -1,6 +1,12 @@
 #include <algorithm>
 #include <iostream>
+#include <vector>
 #include <string>
+#include <cstdio>
+#include <map>
+#include <set>
+#include <queue>
+#include <stack>
 using namespace std;
 static const int MAX = 200000;
 
