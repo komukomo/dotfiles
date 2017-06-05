@@ -175,6 +175,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'kchmck/vim-coffee-script', {'for': 'coffee'}
 Plug 'digitaltoad/vim-pug', {'for': 'pug'}
+Plug 'posma/vim-vue', {'for': 'vue'}
 Plug 'leafgarland/typescript-vim', {'for': 'typescript'}
 Plug 'Chiel92/vim-autoformat' | source ~/.vim/plug-conf/vim-autoformat.vim
 call plug#end()
