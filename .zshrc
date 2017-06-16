@@ -89,6 +89,7 @@ alias mv='mv -i'
 alias mkdir='mkdir -p'
 alias nkfu='nkf -w -Lu --overwrite'
 alias sudo='sudo '
+alias cdd='cd `git rev-parse --show-toplevel`'
 
 function set_apt() {
     function apt() {
