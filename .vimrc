@@ -84,6 +84,8 @@ inoremap <C-k> <up>
 "turn off the highlight of search words
 nnoremap <C-l> :nohl<CR><C-l>
 
+"cd .
+nnoremap <leader>. :lcd %:h<CR>
 
 """"""""""""""""""""""""""""""""""
 "command
