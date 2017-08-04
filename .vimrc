@@ -175,6 +175,7 @@ Plug 'junegunn/vim-plug', {'dir': '~/.vim/plugged/vim-plug/autoload'}
 Plug 'kien/ctrlp.vim' | source ~/.vim/plug-conf/ctrlp.vim
 Plug 'editorconfig/editorconfig-vim'
 Plug 'rking/ag.vim'
+Plug 'nathanaelkane/vim-indent-guides' | source ~/.vim/plug-conf/vim-indent-guides.vim
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'kchmck/vim-coffee-script', {'for': 'coffee'}
 Plug 'digitaltoad/vim-pug', {'for': 'pug'}
