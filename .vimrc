@@ -175,7 +175,12 @@ Plug 'junegunn/vim-plug', {'dir': '~/.vim/plugged/vim-plug/autoload'}
 Plug 'kien/ctrlp.vim' | source ~/.vim/plug-conf/ctrlp.vim
 Plug 'editorconfig/editorconfig-vim'
 Plug 'rking/ag.vim'
+Plug 'vim-scripts/BufOnly.vim'
+Plug 'tpope/vim-fugitive'
 Plug 'nathanaelkane/vim-indent-guides' | source ~/.vim/plug-conf/vim-indent-guides.vim
+Plug 'scrooloose/nerdtree' | source ~/.vim/plug-conf/nerdtree.vim
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'airblade/vim-gitgutter'
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'kchmck/vim-coffee-script', {'for': 'coffee'}
 Plug 'digitaltoad/vim-pug', {'for': 'pug'}
