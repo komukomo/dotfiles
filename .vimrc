@@ -176,7 +176,7 @@ Plug 'kien/ctrlp.vim' | source ~/.vim/plug-conf/ctrlp.vim
 Plug 'editorconfig/editorconfig-vim'
 Plug 'rking/ag.vim'
 Plug 'vim-scripts/BufOnly.vim'
-Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive' | source ~/.vim/plug-conf/vim-fugitive.vim
 Plug 'nathanaelkane/vim-indent-guides' | source ~/.vim/plug-conf/vim-indent-guides.vim
 Plug 'scrooloose/nerdtree' | source ~/.vim/plug-conf/nerdtree.vim
 Plug 'Xuyuanp/nerdtree-git-plugin'
