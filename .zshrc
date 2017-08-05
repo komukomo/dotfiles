@@ -81,6 +81,10 @@ bindkey -e
 
 bindkey '^R' history-incremental-pattern-search-backward
 
+function cd-up { zle push-line && LBUFFER='builtin cd ..' && zle accept-line }
+zle -N cd-up
+bindkey "^O" cd-up
+
 ########################################
 # alias
 
