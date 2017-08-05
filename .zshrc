@@ -3,12 +3,16 @@
 autoload -Uz colors
 colors
 
-# Emacs key bindings
-
 # history
 HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
+setopt share_history
+setopt hist_ignore_all_dups
+setopt hist_save_nodups
+setopt hist_ignore_space
+setopt hist_reduce_blanks
+setopt hist_no_store
 
 # consle prompt
 local p_info="%B%F{blue}%n@%m%f%b"
@@ -66,18 +70,15 @@ setopt auto_cd
 setopt auto_pushd
 setopt pushd_ignore_dups
 setopt magic_equal_subst
-setopt share_history
-setopt hist_ignore_all_dups
-setopt hist_save_nodups
-setopt hist_ignore_space
-setopt hist_reduce_blanks
 setopt auto_menu
 setopt extended_glob
 
 ########################################
 # bind
 
+# Emacs key bindings
 bindkey -e
+
 bindkey '^R' history-incremental-pattern-search-backward
 
 ########################################
