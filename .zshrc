@@ -91,6 +91,8 @@ alias mkdir='mkdir -p'
 alias nkfu='nkf -w -Lu --overwrite'
 alias sudo='sudo '
 alias cdd='cd `git rev-parse --show-toplevel`'
+alias tigs='tig status'
+alias tigb='tig refs'
 
 function set_apt() {
     function apt() {
