@@ -146,3 +146,5 @@ function f() {
 }
 
 [ -s "$HOME/.zshrc-after" ] && \. "$HOME/.zshrc-after"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
