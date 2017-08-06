@@ -125,6 +125,7 @@ case ${OSTYPE} in
         alias ll='ls -alF'
         alias la='ls -AG'
         alias l='ls -CFG'
+        alias vi='vim'
         ;;
     linux*)
         alias ls='ls --color=auto'
