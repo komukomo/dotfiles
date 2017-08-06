@@ -174,7 +174,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-plug', {'dir': '~/.vim/plugged/vim-plug/autoload'}
 Plug 'kien/ctrlp.vim' | source ~/.vim/plug-conf/ctrlp.vim
 Plug 'editorconfig/editorconfig-vim'
-Plug 'rking/ag.vim'
+Plug 'rking/ag.vim' | source ~/.vim/plug-conf/ag.vim
 Plug 'vim-scripts/BufOnly.vim'
 Plug 'tpope/vim-fugitive' | source ~/.vim/plug-conf/vim-fugitive.vim
 Plug 'nathanaelkane/vim-indent-guides' | source ~/.vim/plug-conf/vim-indent-guides.vim
