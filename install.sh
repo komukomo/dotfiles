@@ -35,7 +35,7 @@ do_install() {
 	do
 		ln -s ${DOT_DIR}/${file} ${HOME}/${file}
 		if [ $? -eq 0 ]; then
-			echo "success to create sym link: ${file}"
+			echo "symlink craeted: ${file}"
 		fi
 	done
 }
