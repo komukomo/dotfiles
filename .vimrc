@@ -1,5 +1,6 @@
 set nocompatible    "turn off Vi compatible mode
 syntax on
+colorscheme default
 set background=dark
 filetype indent plugin on
 set showcmd    "show the current command at the bottom
