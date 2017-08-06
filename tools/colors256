@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# show 256 terminal colors
+
+fg="\x1b[38;5;"
+bg="\x1b[48;5;"
+rs="\x1b[0m"
+
+for i in {0..255} ; do
+    if [ $(($i % 10)) = 0 ]; then
+        echo
+    fi
+    color=`printf "%03d\n" $i`
+    printf "%b %b " $bg${color}m${color}$rs $fg${color}m${color}$rs
+done
+echo
