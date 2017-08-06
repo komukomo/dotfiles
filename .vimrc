@@ -183,8 +183,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'kchmck/vim-coffee-script', {'for': 'coffee'}
-Plug 'digitaltoad/vim-pug', {'for': 'pug'}
 Plug 'posva/vim-vue', {'for': 'vue'}
+Plug 'digitaltoad/vim-pug', {'for': ['pug', 'vue']}
 Plug 'leafgarland/typescript-vim', {'for': 'typescript'}
 Plug 'Chiel92/vim-autoformat' | source ~/.vim/plug-conf/vim-autoformat.vim
 call plug#end()
