@@ -182,6 +182,7 @@ Plug 'nathanaelkane/vim-indent-guides' | source ~/.vim/plug-conf/vim-indent-guid
 Plug 'scrooloose/nerdtree' | source ~/.vim/plug-conf/nerdtree.vim
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
+Plug 'w0rp/ale'
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'kchmck/vim-coffee-script', {'for': 'coffee'}
 Plug 'posva/vim-vue', {'for': 'vue'}
