@@ -16,5 +16,6 @@
 	cm = commit
 	co = checkout
 	df = diff
+	cb = rev-parse --abbrev-ref HEAD
 [credential]
 	helper = cache
