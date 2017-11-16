@@ -23,6 +23,7 @@ set nowrap
 set history=10000
 source $VIMRUNTIME/macros/matchit.vim
 let g:mapleader = "\<Space>"
+set visualbell t_vb=
 
 
 
