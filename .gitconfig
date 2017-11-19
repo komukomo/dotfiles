@@ -17,5 +17,6 @@
 	co = checkout
 	df = diff
 	cb = rev-parse --abbrev-ref HEAD
+	delete-branches = !git branch --merged develop | grep -v develop | grep -v master | xargs -I{} git branch -d {}
 [credential]
 	helper = cache
