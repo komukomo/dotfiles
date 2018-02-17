@@ -97,6 +97,7 @@ alias sudo='sudo '
 alias cdd='cd `git rev-parse --show-toplevel`'
 alias tigs='tig status'
 alias tigb='tig refs'
+alias rg='rg -S'
 alias -g L='| less'
 alias -g G='| grep'
 
