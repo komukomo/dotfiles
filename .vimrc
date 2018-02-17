@@ -174,7 +174,8 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-plug', {'dir': '~/.vim/plugged/vim-plug/autoload'}
-Plug 'kien/ctrlp.vim' | source ~/.vim/plug-conf/ctrlp.vim
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'rking/ag.vim' | source ~/.vim/plug-conf/ag.vim
 Plug 'vim-scripts/BufOnly.vim'
