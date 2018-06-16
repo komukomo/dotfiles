@@ -139,7 +139,7 @@ autocmd BufNewFile *.cpp 0r $HOME/.vim/template/cpp.txt
 "encoding
 """"""""""""""""""""""""""""""""""
 set encoding=utf-8    "set default encoding"
-set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8
+set fileencodings=utf-8,iso-2022-jp,cp932,sjis,euc-jp
 set fileformats=unix,dos,mac
 set ambiwidth=double
 
