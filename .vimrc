@@ -191,7 +191,7 @@ Plug 'ternjs/tern_for_vim'
 Plug 'isRuslan/vim-es6'
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'kchmck/vim-coffee-script', {'for': 'coffee'}
-Plug 'posva/vim-vue', {'for': 'vue'}
+Plug 'posva/vim-vue', {'for': 'vue'} | source ~/.vim/plug-conf/vim-vue.vim
 Plug 'digitaltoad/vim-pug', {'for': ['pug', 'vue']}
 Plug 'leafgarland/typescript-vim', {'for': 'typescript'}
 Plug 'Chiel92/vim-autoformat' | source ~/.vim/plug-conf/vim-autoformat.vim
