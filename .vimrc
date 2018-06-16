@@ -67,8 +67,8 @@ match ZenkakuSpace /　/
 "move tabs
 nnoremap ]t :tabnext<CR>
 nnoremap [t :tabprevious<CR>
-nnoremap <tab> :tabnext<CR>
-nnoremap <S-tab> :tabprevious<CR>
+" noremap <tab> :tabnext<CR>
+" nnoremap <S-tab> :tabprevious<CR>
 
 "move buffers
 nnoremap ]b :bnext<CR>
@@ -186,6 +186,8 @@ Plug 'scrooloose/nerdtree' | source ~/.vim/plug-conf/nerdtree.vim
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
 Plug 'w0rp/ale' | source ~/.vim/plug-conf/ale.vim
+Plug 'Valloric/YouCompleteMe' | source ~/.vim/plug-conf/YouCompleteMe.vim
+Plug 'ternjs/tern_for_vim'
 Plug 'isRuslan/vim-es6'
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'kchmck/vim-coffee-script', {'for': 'coffee'}
