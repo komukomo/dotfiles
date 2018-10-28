@@ -181,6 +181,7 @@ Plug 'rking/ag.vim' | source ~/.vim/plug-conf/ag.vim
 Plug 'jremmen/vim-ripgrep'
 Plug 'vim-scripts/BufOnly.vim'
 Plug 'tpope/vim-fugitive' | source ~/.vim/plug-conf/vim-fugitive.vim
+Plug 'tpope/vim-rhubarb'
 Plug 'nathanaelkane/vim-indent-guides' | source ~/.vim/plug-conf/vim-indent-guides.vim
 Plug 'scrooloose/nerdtree' | source ~/.vim/plug-conf/nerdtree.vim
 Plug 'Xuyuanp/nerdtree-git-plugin'
