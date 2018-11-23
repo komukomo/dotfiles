@@ -1,0 +1,7 @@
+# enable merge commit diff
+set diff-options = -m --first-parent
+
+bind main    B !git rebase -i %(commit)
+bind diff    B !git rebase -i %(commit)
+bind main    c !git checkout %(commit)
+bind main    ! !git revert %(commit)
