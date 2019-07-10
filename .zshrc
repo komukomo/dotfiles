@@ -98,6 +98,8 @@ alias cdd='cd `git rev-parse --show-toplevel`'
 alias tigs='tig status'
 alias tigb='tig refs'
 alias rg='rg -S'
+alias ds='docker-compose'
+
 alias -g L='| less'
 alias -g G='| grep'
 
