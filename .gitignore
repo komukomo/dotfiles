@@ -1,3 +1,4 @@
 .vim/plugged/
 *.swp
 .python-version
+.ignore
