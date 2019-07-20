@@ -1,5 +1,6 @@
 # enable merge commit diff
 set diff-options = -m --first-parent
+set line-graphics = utf-8
 
 bind main    B !git rebase -i %(commit)
 bind diff    B !git rebase -i %(commit)
