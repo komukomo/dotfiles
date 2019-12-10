@@ -16,6 +16,7 @@ main() {
 config_git() {
 	git config user.name komukomo
 	git config user.email komukomo@users.noreply.github.com
+	git config core.ignorecase false
 }
 
 get_repo() {
