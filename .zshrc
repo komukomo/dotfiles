@@ -14,11 +14,36 @@ setopt hist_ignore_space
 setopt hist_reduce_blanks
 setopt hist_no_store
 
-# consle prompt
+########################################
+# prompt
+
 local p_info="%B%F{blue}%n@%m%f%b"
 local p_cdir="%B%F{blue}%~%f%b"$'\n'
-PROMPT="$p_info $p_cdir $ "
+color=green
 
+## kubectl context
+if [ ! -f $HOME/.kubectl.zsh ]; then 
+  curl https://raw.githubusercontent.com/superbrothers/zsh-kubectl-prompt/master/kubectl.zsh -o $HOME/.kubectl.zsh
+fi
+source $HOME/.kubectl.zsh
+local kube_context='%{$fg[$color]%}k8s:[$ZSH_KUBECTL_PROMPT]%{$reset_color%}'
+
+## vcs_info
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' formats '%s:[%b]'
+zstyle ':vcs_info:*' actionformats '%s:[%b|%a]'
+
+precmd () {
+    psvar=()
+    LANG=en_US.UTF-8 vcs_info
+    [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
+    VCSINFO=$vcs_info_msg_0_
+}
+local vcs_info='%{$fg[$color]%}$VCSINFO%{$reset_color%}'
+
+PROMPT="$vcs_info $kube_context $p_cdir$ "
+
+########################################
 
 autoload -Uz select-word-style
 select-word-style default
@@ -47,19 +72,6 @@ zstyle ':completion:*:default' menu select=1
 
 # spelling
 setopt correct
-
-########################################
-# vcs_info
-
-autoload -Uz vcs_info
-zstyle ':vcs_info:*' formats '(%s)-[%b]'
-zstyle ':vcs_info:*' actionformats '(%s)-[%b|%a]'
-precmd () {
-    psvar=()
-    LANG=en_US.UTF-8 vcs_info
-    [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
-}
-RPROMPT="%1(v|%F{green}%1v%f|)"
 
 ########################################
 setopt print_eight_bit
