@@ -2,3 +2,4 @@
 *.swp
 .python-version
 .ignore
+**/komazaki/**
