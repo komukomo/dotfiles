@@ -22,10 +22,10 @@ local p_cdir="%B%F{blue}%~%f%b"$'\n'
 color=green
 
 ## kubectl context
-if [ ! -f $HOME/.kubectl.zsh ]; then 
-  curl https://raw.githubusercontent.com/superbrothers/zsh-kubectl-prompt/master/kubectl.zsh -o $HOME/.kubectl.zsh
+if [ ! -d $HOME/.zsh-kubectl-prompt ]; then 
+  git clone git@github.com:superbrothers/zsh-kubectl-prompt.git -b v1.4.0 $HOME/.zsh-kubectl-prompt --depth 1
 fi
-source $HOME/.kubectl.zsh
+source $HOME/.zsh-kubectl-prompt/kubectl.zsh
 local kube_context='%{$fg[$color]%}k8s:[$ZSH_KUBECTL_PROMPT]%{$reset_color%}'
 
 ## vcs_info
