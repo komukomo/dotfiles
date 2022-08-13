@@ -18,10 +18,11 @@ source "/usr/local/opt/fzf/shell/key-bindings.zsh"
 bindkey -r '\ec'
 bindkey '^G' fzf-cd-widget
 
-export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+export FZF_DEFAULT_COMMAND='fd --type f'
 
 # To apply the command to CTRL-T as well
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git'
 
 # https://github.com/junegunn/fzf/wiki/examples
 # fbr - checkout git branch (including remote branches)
