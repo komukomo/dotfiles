@@ -177,8 +177,8 @@ Plug 'junegunn/vim-plug', {'dir': '~/.vim/plugged/vim-plug/autoload'}
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim' | source ~/.vim/plug-conf/fzf.vim
 Plug 'editorconfig/editorconfig-vim'
-Plug 'rking/ag.vim' | source ~/.vim/plug-conf/ag.vim
-Plug 'jremmen/vim-ripgrep'
+"Plug 'rking/ag.vim' | source ~/.vim/plug-conf/ag.vim
+"Plug 'jremmen/vim-ripgrep'
 Plug 'vim-scripts/BufOnly.vim'
 Plug 'tpope/vim-fugitive' | source ~/.vim/plug-conf/vim-fugitive.vim
 Plug 'tpope/vim-rhubarb'
