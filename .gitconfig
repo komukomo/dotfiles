@@ -19,6 +19,7 @@
 	cb = rev-parse --abbrev-ref HEAD
 	delete-branches = !git branch --merged develop | grep -v develop | grep -v master | xargs -I{} git branch -d {}
 	rename-branch = !git branch -m `git cb`
+	default-branch = !git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'
 [credential]
 	helper = cache
 [fetch]
