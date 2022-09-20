@@ -23,7 +23,7 @@ color=green
 
 ## kubectl context
 if [ ! -d $HOME/.zsh-kubectl-prompt ]; then 
-  git clone git@github.com:superbrothers/zsh-kubectl-prompt.git -b v1.4.0 $HOME/.zsh-kubectl-prompt --depth 1
+  git clone https://github.com/superbrothers/zsh-kubectl-prompt.git -b v1.4.0 $HOME/.zsh-kubectl-prompt --depth 1
 fi
 source $HOME/.zsh-kubectl-prompt/kubectl.zsh
 local kube_context='%{$fg[$color]%}k8s:[$ZSH_KUBECTL_PROMPT]%{$reset_color%}'
@@ -167,6 +167,8 @@ esac
 function f() {
     find $1 -iname "*$2*"
 }
+
+# export PATH=/Users/kmzk/ghq/github.com/plaidev/exsql/target/debug:$PATH
 
 [ -s "$HOME/.zshrc-after" ] && \. "$HOME/.zshrc-after"
 
