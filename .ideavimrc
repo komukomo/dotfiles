@@ -1,2 +1,4 @@
 nnoremap <C-H> :action TypeHierarchy<CR>
+nnoremap <C-R> :action Run<CR>
+nnoremap <D-R> :action Debug<CR>
 
