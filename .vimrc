@@ -174,7 +174,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-plug', {'dir': '~/.vim/plugged/vim-plug/autoload'}
-Plug '/usr/local/opt/fzf'
+Plug '/opt/homebrew/opt/fzf'
 Plug 'junegunn/fzf.vim' | source ~/.vim/plug-conf/fzf.vim
 Plug 'editorconfig/editorconfig-vim'
 "Plug 'rking/ag.vim' | source ~/.vim/plug-conf/ag.vim
