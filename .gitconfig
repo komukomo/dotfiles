@@ -6,6 +6,7 @@
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim -c \"set fenc=utf-8\"
+	autocrlf = input
 
 [merge]
 	ff = false
@@ -17,7 +18,7 @@
 	co = checkout
 	df = diff
 	cb = rev-parse --abbrev-ref HEAD
-	delete-branches = !git branch --merged `git default-branch` | grep -v `git default-branch` | grep -v master | xargs -I{} git branch -d {}
+	delete-branches = !git branch --merged `git default-branch` | grep -v `git default-branch` | tr -d '+' | xargs -I{} git branch -d {}
 	rename-branch = !git branch -m `git cb`
 	default-branch = !git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'
 [credential]
