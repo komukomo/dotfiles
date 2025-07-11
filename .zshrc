@@ -122,6 +122,7 @@ alias ii='idea $(ghq list -p | fzf)'
 alias k='cursor'
 alias kk='cursor $(ghq list -p | fzf)'
 alias c='cd $(ghq list -p | fzf)'
+alias j='just'
 alias bqq='bq query --nouse_legacy_sql'
 
 alias -g L='| less'
