@@ -21,6 +21,7 @@
 	delete-branches = !git branch --merged `git default-branch` | grep -v `git default-branch` | tr -d '+' | xargs -I{} git branch -d {}
 	rename-branch = !git branch -m `git cb`
 	default-branch = !git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'
+	wt-add = "!f() { base=`basename $PWD`; git worktree add ../${base}-\"$1\" -b $1 ; }; f"
 [credential]
 	helper = cache
 [fetch]
